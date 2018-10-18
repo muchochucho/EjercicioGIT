@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var labelOutlet: UILabel!
+    var cuenta = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +24,8 @@ class ViewController: UIViewController {
 
 
     @IBAction func botonApretado(_ sender: UIButton) {
+        cuenta += 1
+        self.labelOutlet.text = String(cuenta)
     }
 }
 
