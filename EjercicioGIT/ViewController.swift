@@ -24,11 +24,17 @@ class ViewController: UIViewController {
 
 
     @IBAction func botonApretado(_ sender: UIButton) {
-        if sender.currentTitle == "Aumentar" {
+        switch sender.currentTitle {
+        case "Aumentar":
             cuenta += 1
-        } else {
+        case "Disminuir":
             cuenta -= 1
+        case "x10":
+            cuenta *= 10
+        default:
+            print ("Nada")
         }
+        
         self.labelOutlet.text = String(cuenta)
         if cuenta % 20 == 0 {
             let rojo = CGFloat(Double(arc4random_uniform(100)) / 100)

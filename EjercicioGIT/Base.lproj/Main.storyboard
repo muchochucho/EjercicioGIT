@@ -38,6 +38,14 @@
                                     <action selector="botonApretado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ys4-6Z-Fd8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tw8-ep-qMZ">
+                                <rect key="frame" x="172" y="390" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="x10"/>
+                                <connections>
+                                    <action selector="botonApretado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YTx-n7-C1k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
