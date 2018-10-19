@@ -26,6 +26,12 @@ class ViewController: UIViewController {
     @IBAction func botonApretado(_ sender: UIButton) {
         cuenta += 1
         self.labelOutlet.text = String(cuenta)
+        if cuenta % 20 == 0 {
+            let rojo = CGFloat(Double(arc4random_uniform(100)) / 100)
+            let azul = CGFloat(Double(arc4random_uniform(100)) / 100)
+            let verde = CGFloat(Double(arc4random_uniform(100)) / 100)
+            self.labelOutlet.backgroundColor = UIColor.init(red: rojo, green: verde, blue: azul, alpha: 1)
+        }
     }
 }
 
