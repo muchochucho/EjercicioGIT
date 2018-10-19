@@ -25,17 +25,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pv-l9-DI9">
-                                <rect key="frame" x="164" y="352" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="154" y="352" width="67" height="30"/>
+                                <state key="normal" title="Aumentar"/>
                                 <connections>
                                     <action selector="botonApretado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k0k-wT-G8s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlX-Hy-Fib">
+                                <rect key="frame" x="155" y="285" width="64" height="30"/>
+                                <state key="normal" title="Disminuir"/>
+                                <connections>
+                                    <action selector="botonApretado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ys4-6Z-Fd8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2cv-Hk-2OS" firstAttribute="centerX" secondItem="8pv-l9-DI9" secondAttribute="centerX" id="FKo-TS-6l1"/>
+                            <constraint firstItem="xlX-Hy-Fib" firstAttribute="centerX" secondItem="2cv-Hk-2OS" secondAttribute="centerX" id="Hqy-go-O4x"/>
                             <constraint firstItem="2cv-Hk-2OS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I9u-Gq-vyf"/>
+                            <constraint firstItem="2cv-Hk-2OS" firstAttribute="top" secondItem="xlX-Hy-Fib" secondAttribute="bottom" constant="8" symbolic="YES" id="kcX-Gy-LDM"/>
                             <constraint firstItem="8pv-l9-DI9" firstAttribute="top" secondItem="2cv-Hk-2OS" secondAttribute="bottom" constant="8" symbolic="YES" id="kh0-V2-YEd"/>
                             <constraint firstItem="2cv-Hk-2OS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uBk-yK-Yt9"/>
                         </constraints>
